@@ -85,8 +85,7 @@ We can now create our content and initialize a form:
            id="form-widgets-en-title"
            name="form.widgets.en.title"
            class="form-control text-widget textline-field"
-           value="Content title"
-           data-ams-data="" />
+           value="Content title" />
 
 Let's now try to add an I18n negotiator to add a few languages:
 

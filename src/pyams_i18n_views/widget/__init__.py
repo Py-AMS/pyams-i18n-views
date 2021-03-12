@@ -134,7 +134,7 @@ class I18nWidget(HTMLInputWidget, Widget):
                 widget.language = lang
                 widget.update()
             widgets[lang] = widget
-        super(I18nWidget, self).update()
+        super().update()
         for lang in self.languages:
             widget = self.widgets[lang]
             value = (self.value or {}).get(lang, NO_VALUE)

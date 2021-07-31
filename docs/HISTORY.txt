@@ -1,6 +1,11 @@
 Changelog
 =========
 
+1.2.0
+-----
+ - added label adapter for I18n negotiator utility
+ - updated package include scan
+
 1.1.0
 -----
  - removed support for Python < 3.7

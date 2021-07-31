@@ -15,6 +15,9 @@
 This module is used for Pyramid integration
 """
 
+import re
+
+
 __docformat__ = 'restructuredtext'
 
 
@@ -27,6 +30,6 @@ def include_package(config):
     try:
         import pyams_zmi  # pylint: disable=import-outside-toplevel,unused-import
     except ImportError:
-        config.scan(ignore='pyams_i18n_views.zmi')
+        config.scan(ignore=[re.compile(r'pyams_i18n_views\..*\.zmi\.?.*').search])
     else:
         config.scan()

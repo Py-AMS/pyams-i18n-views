@@ -26,7 +26,7 @@ from pyams_layer.interfaces import IPyAMSLayer
 from pyams_security.interfaces.base import MANAGE_SYSTEM_PERMISSION
 from pyams_utils.adapter import adapter_config
 from pyams_zmi.form import AdminModalEditForm
-from pyams_zmi.interfaces import IAdminLayer
+from pyams_zmi.interfaces import IAdminLayer, IObjectLabel
 from pyams_zmi.interfaces.table import ITableElementEditor
 from pyams_zmi.table import TableElementEditor
 
@@ -34,6 +34,13 @@ from pyams_zmi.table import TableElementEditor
 __docformat__ = 'restructuredtext'
 
 from pyams_i18n_views import _  # pylint: disable=ungrouped-imports
+
+
+@adapter_config(required=(INegotiator, IAdminLayer, Interface),
+                provides=IObjectLabel)
+def negotiator_label(context, request, view):
+    """I18n negotiator label"""
+    return request.localizer.translate(_("Language negotiator"))
 
 
 @adapter_config(required=(INegotiator, IAdminLayer, Interface),

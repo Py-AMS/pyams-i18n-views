@@ -83,11 +83,13 @@ We can now create our content and initialize a form:
     FieldWidgets([('title', <I18nWidget 'form.widgets.title'>)])
 
     >>> print(form.widgets['title'].render().strip())
-    <input type="text"
-           id="form-widgets-en-title"
-           name="form.widgets.en.title"
-           class="form-control text-widget textline-field"
-           value="Content title" />
+    <div id="form-widgets-title">
+        <input type="text"
+               id="form-widgets-en-title"
+               name="form.widgets.en.title"
+               class="form-control text-widget textline-field"
+               value="Content title" />
+    </div>
 
 Let's now try to add an I18n negotiator to add a few languages:
 

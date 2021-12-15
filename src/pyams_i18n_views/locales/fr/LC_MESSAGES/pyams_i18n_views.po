@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE 1.0\n"
-"POT-Creation-Date: 2021-11-04 22:39+0100\n"
+"POT-Creation-Date: 2021-12-14 09:19+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,17 +20,21 @@ msgid "Languages"
 msgstr "Langues"
 
 #: src/pyams_i18n_views/zmi/manager.py:58
-msgid "Content languages"
-msgstr "Traduction de ce contenu"
+msgid "Content translations"
+msgstr "Traduction des contenus"
 
-#: src/pyams_i18n_views/zmi/manager.py:70
+#: src/pyams_i18n_views/zmi/manager.py:59
+msgid "Content languages"
+msgstr "Langues de ce contenu"
+
+#: src/pyams_i18n_views/zmi/manager.py:71
 msgid ""
 "For each selected language, a tab will be associated to each *translatable* "
 "form input to enter matching translation."
 msgstr ""
-"Si vous indiquez une ou plusieurs langues, des onglets seront associés à chaque champ "
-"de saisie pouvant faire l'objet d'une traduction, afin de permettre de fournir une version "
-"adaptée à chaque langue des champs concernés"
+"Si vous indiquez une ou plusieurs langues, des onglets seront associés à "
+"chaque champ de saisie pouvant faire l'objet d'une traduction, afin de "
+"permettre de fournir une version adaptée à chaque langue des champs concernés"
 
 #: src/pyams_i18n_views/zmi/negotiator.py:43
 #: src/pyams_i18n_views/zmi/negotiator.py:56

@@ -55,6 +55,7 @@ class I18nManagerLanguagesMenu(NavigationMenuItem):
 class I18nManagerLanguagesEditForm(AdminEditForm):
     """I18n manager languages edit form"""
 
+    title = _("Content translations")
     legend = _("Content languages")
 
     fields = Fields(II18nManager)

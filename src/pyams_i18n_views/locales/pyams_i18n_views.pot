@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE 1.0\n"
-"POT-Creation-Date: 2021-11-04 22:39+0100\n"
+"POT-Creation-Date: 2021-12-14 09:19+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,10 +21,14 @@ msgid "Languages"
 msgstr ""
 
 #: ./src/pyams_i18n_views/zmi/manager.py:58
+msgid "Content translations"
+msgstr ""
+
+#: ./src/pyams_i18n_views/zmi/manager.py:59
 msgid "Content languages"
 msgstr ""
 
-#: ./src/pyams_i18n_views/zmi/manager.py:70
+#: ./src/pyams_i18n_views/zmi/manager.py:71
 msgid ""
 "For each selected language, a tab will be associated to each *translatable* "
 "form input to enter matching translation."

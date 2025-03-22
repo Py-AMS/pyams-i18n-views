@@ -12,7 +12,7 @@
 						<img src="/--static--/pyams_i18n/img/flags/${widget.language}.png"
 							 alt="${widget.language}" />
 						<i tal:condition="widget.current_value | widget.value"
-						   class="fas fa-fw fa-star ml-2 text-warning"></i>
+						   class="fas fa-fw fa-sm fa-star ml-2 text-warning"></i>
 					</a>
 				</li>
 			</tal:loop>
@@ -20,7 +20,7 @@
 		<div class="tab-content">
 			<div tal:repeat="widget view.widgets.values()"
 				 id="${widget.id}-tab"
-				 class="tab-pane ${'active' if repeat['widget'].start() else None}">
+				 class="tab-pane ${'active' if repeat['widget'].start() else None} p-1">
 				${structure:widget.render()}
 			</div>
 		</div>

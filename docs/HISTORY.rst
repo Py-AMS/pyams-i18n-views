@@ -1,6 +1,10 @@
 Changelog
 =========
 
+2.0.2
+-----
+ - updated doctests for Python 3.12
+
 2.0.1
 -----
  - updates CSS classes in I18n input widget template

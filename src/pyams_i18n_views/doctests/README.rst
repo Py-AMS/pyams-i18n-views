@@ -79,8 +79,10 @@ We can now create our content and initialize a form:
 
     >>> form = I18nContentEditForm(content, request)
     >>> form.update()
-    >>> form.widgets
-    FieldWidgets([('title', <I18nWidget 'form.widgets.title'>)])
+    >>> list(form.widgets.keys())
+    ['title']
+    >>> form.widgets['title']
+    <I18nWidget 'form.widgets.title'>
 
     >>> print(form.widgets['title'].render().strip())
     <div id="form-widgets-title">
